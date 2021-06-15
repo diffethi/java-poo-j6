@@ -1,78 +1,36 @@
 package fr.diginamic.recensement.entites;
 
-import java.util.ArrayList;
-import java.util.List;
+public class Region {
+    int ID_region;
+    String nom_region;
 
-/** Représente une région
- * @author DIGINAMIC
- *
- */
-public class Region implements EnsemblePop {
+    public Region() {
 
-	/** code : String*/
-	private String code;
-	/** nom : String*/
-	private String nom;
-	/** population : int*/
-	private int population;
-	
-	/** villes : List<Ville>*/
-	private List<Ville> villes = new ArrayList<>();
-	
-	/** Constructeur
-	 * @param code code
-	 * @param nom nom
-	 */
-	public Region(String code, String nom) {
-		super();
-		this.code = code;
-		this.nom = nom;
-	}
-	
-	/** Ajoute une ville
-	 * @param ville ville
-	 */
-	public void addVille(Ville ville){
-		villes.add(ville);
-		this.population=this.population+ville.getPopulation();
-	}
-	
-	/** Getter
-	 * @return the code
-	 */
-	public String getCode() {
-		return code;
-	}
-	/** Setter
-	 * @param code the code to set
-	 */
-	public void setCode(String code) {
-		this.code = code;
-	}
-	/** Getter
-	 * @return the nom
-	 */
-	public String getNom() {
-		return nom;
-	}
-	/** Setter
-	 * @param nom the nom to set
-	 */
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-	/** Getter
-	 * @return the population
-	 */
-	public int getPopulation() {
-		return population;
-	}
-	/** Setter
-	 * @param population the population to set
-	 */
-	public void setPopulation(int population) {
-		this.population = population;
-	}
+        this.ID_region = ID_region;
+        this.nom_region = nom_region;
+    }
 
-	
+    public int getID_region() {
+        return ID_region;
+    }
+
+    public void setID_region(int ID_region) {
+        this.ID_region = ID_region;
+    }
+
+    public String getNom_region() {
+        return nom_region;
+    }
+
+    public void setNom_region(String nom_region) {
+        this.nom_region = nom_region;
+    }
+
+    @Override
+    public String toString() {
+        return "Region{" +
+                "ID_region=" + ID_region +
+                ", nom_region='" + nom_region + '\'' +
+                '}';
+    }
 }

@@ -23,16 +23,9 @@ public class Ville implements EnsemblePop {
 
 	/**
 	 * Constructeur
-	 * 
-	 * @param codeRegion code de la région
-	 * @param nomRegion nom de la région
-	 * @param codeDepartement code du département
-	 * @param codeVille code INSEE de la ville
-	 * @param nom nom de la ville
-	 * @param population population totale
+	 *
 	 */
-	public Ville(String codeRegion, String nomRegion, String codeDepartement, String codeVille, String nom,
-			int population) {
+	public Ville() {
 		super();
 		this.codeRegion = codeRegion;
 		this.nomRegion = nomRegion;

@@ -43,7 +43,7 @@ public class RechercheRegionsPlusPeuplees extends MenuService {
 
 			// Si la région n'existe pas, on la créée
 			if (region == null) {
-				region = new Region(ville.getCodeRegion(), ville.getNomRegion());
+				region = new Region();
 				mapRegions.put(ville.getNomRegion(), region);
 			}
 
